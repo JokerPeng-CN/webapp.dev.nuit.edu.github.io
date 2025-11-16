@@ -1,0 +1,106 @@
+<div class="goods">
+  <div class="goods-box">
+    <div class="goods-box-txt">
+      <h3>新鲜好物</h3>
+      <p>新鲜出炉&nbsp;品质靠谱</p>
+    </div>
+    <div class="goods-box-more">查看更多&nbsp;<i class="bi bi-chevron-right"></i></div>
+  </div>
+  <div class="goods-picture">
+    <div class="goods-picture-message"><img src="../static/img/goods1.png" alt="">
+      <div><a href="#">KN95级莫兰迪色防护口罩</a>
+        <p>￥&nbsp;79</p>
+      </div>
+    </div>
+    <div class="goods-picture-message"><img src="../static/img/goods2.png" alt="">
+      <div><a href="#">紫檀外独板三层普洱茶盒</a>
+        <p>￥&nbsp;566</p>
+      </div>
+    </div>
+    <div class="goods-picture-message"><img src="../static/img/goods3.png" alt="">
+      <div><a href="#">法拉蒙高颜值记事本可定制</a>
+        <p>￥&nbsp;58</p>
+      </div>
+    </div>
+    <div class="goods-picture-message"><img src="../static/img/goods4.png" alt="">
+      <div><a href="#">科技布布艺沙发</a>
+        <p>￥&nbsp;3579</p>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .goods {
+    width: 86%;
+    margin: 0 auto;
+  }
+
+  .goods-box {
+    display: flex;
+
+    padding-top: 4%;
+    padding-bottom: 3%;
+  }
+
+  .goods-box-txt {
+    display: flex;
+    /* 横向排列 h3 和 p */
+    align-items: flex-end;
+    /* 让 h3 和 p 底部对齐 */
+    gap: 15%;
+    /* 控制 h3 和 p 之间的间距（可选） */
+  }
+
+  .goods-box h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    /* 去除默认 margin，避免影响对齐 */
+  }
+
+  .goods-box p {
+    font-size: 16px;
+    color: #A1A1A1;
+    margin: 0;
+    /* 同样去除默认 margin */
+  }
+
+  .goods-box-more {
+    margin-left: auto;
+    /* 将查看更多推到最右侧 */
+    font-size: 16px;
+    color: #A1A1A1;
+  }
+
+
+  .goods-picture {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .goods-picture-message img {
+    object-fit: cover;
+    /* 保持图片比例并裁剪 */
+    margin-bottom: 6%;
+  }
+
+  .goods-picture-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EEF9F4;
+  }
+
+  .goods-picture-message a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+
+  .goods-picture-message p {
+    font-size: 22px;
+    color: #AA2113;
+    margin-top: 5px;
+    text-align: center;
+  }
+</style>

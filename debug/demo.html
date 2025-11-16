@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小兔鲜儿-新鲜、惠民、快捷!</title>
+
+
+  <link rel="icon" type="image/x-icon" href="./static/favicon/favicon.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+  <!-- 新 Bootstrap5 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+  <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+  <style>
+    .nav-first-box {
+      height: 52px;
+      background-color: #333;
+    }
+
+    .nav-sec-box {
+      height: 52px;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      float: right;
+      margin-right: 8%;
+    }
+
+    .horizontal-list {
+      /* 去除li原点和默认的边距 */
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .horizontal-list li {
+      /* li处于同一水平 */
+      display: inline-block;
+      margin-right: 9px;
+      color: white;
+      font-weight: 100;
+    }
+
+    .horizontal-list a {
+      /* a标签去除默认样式 */
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .horizontal-list a:hover {
+      color: #70AC97;
+    }
+
+    .outer-nav {
+      display: flex;
+      justify-content: center;
+      /* 水平居中 */
+      align-items: center;
+      /* 垂直居中 */
+    }
+
+    .outer-nav div {
+      margin: 20px;
+    }
+
+    .outer-nav a {
+      /* 转为行内块元素 */
+      display: inline-block;
+      height: 40px;
+
+      /* 与height相同 */
+      line-height: 40px;
+
+      /* a标签去除默认样式 */
+      text-decoration: none;
+      color: black;
+
+      margin: 20px;
+
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    /* 选中下划线 */
+    .log-nav-div a:hover {
+      color: #70AC97;
+      border-bottom: 2px solid #70AC97;
+    }
+
+    .log-nav-div {
+      display: inline-block;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <div style="height: 1000px; width: 100%; background-color: wheat;">
+    <div class="nav-first-box">
+      <div class="nav-sec-box">
+        <ul class="horizontal-list">
+          <li><a href="#">请先登录</a></li>
+          <li class="">|</li>
+          <li><a href="#">免费注册</a></li>
+          <li>|</li>
+          <li><a href="#">我的订单</a></li>
+          <li>|</li>
+          <li><a href="#">会员中心</a></li>
+          <li>|</li>
+          <li><a href="#">帮助中心</a></li>
+          <li>|</li>
+          <li><a href="#">在线客服</a></li>
+          <li>|</li>
+          <li>
+            <a href="#"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;手机版</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div style="background-color: white;">
+      <nav class="outer-nav">
+        <div class="log-nav-div" style="margin-left: 0;"><!-- nav-div-logo-Home -->
+          <img src="./static/img/LOGO.PNG" alt="LOGO">
+        </div><!-- nav-div-logo-end -->
+        <div class="log-nav-div"><!-- nav-超链接盒子-Home -->
+          <a href="#"><span>首页</span></a>
+          <a href="#"><span>生鲜</span></a>
+          <a href="#"><span>美食</span></a>
+          <a href="#"><span>餐厨</span></a>
+          <a href="#"><span>电器</span></a>
+          <a href="#"><span>家居</span></a>
+          <a href="#"><span>洗护</span></a>
+          <a href="#"><span>孕婴</span></a>
+          <a href="#"><span>服装</span></a>
+        </div><!-- nav-超链接盒子-end -->
+        <div class="log-nav-div" style="margin-left: 0;"><!-- nav-表单盒子-Home -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="搜索" aria-label="Search">
+          </form>
+        </div><!-- nav-表单盒子-end -->
+        <div class="trolley"><!-- nav-购物车-Home -->
+          <a href="#">
+            <?xml version="1.0" encoding="UTF-8"?><svg width="38" height="38" viewBox="0 0 48 48" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20.5" cy="41.5" r="3.5" fill="#333" />
+              <circle cx="37.5" cy="41.5" r="3.5" fill="#333" />
+              <path d="M5 6L14 12L19 34H39L44 17H25" stroke="#333" stroke-width="2" stroke-linecap="square"
+                stroke-linejoin="round" />
+              <path d="M25 26L32.2727 26L41 26" stroke="#333" stroke-width="2" stroke-linecap="square"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div><!-- nav-购物车-end -->
+      </nav>
+    </div>
+
+
+  </div><!-- body.div -->
+</body>
+
+</html>

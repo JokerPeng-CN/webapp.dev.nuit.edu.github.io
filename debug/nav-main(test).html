@@ -1,0 +1,115 @@
+<div">
+  <div>
+    <nav class="outer-nav">
+      <div class="log-nav-div" style="margin-left: 0;"><!-- nav-div-logo-Home -->
+        <img src="../static/img/LOGO.PNG" alt="LOGO">
+      </div><!-- nav-div-logo-end -->
+      <div class="log-nav-div"><!-- nav-超链接盒子-Home -->
+        <a href="#"><span>首页</span></a>
+        <a href="#"><span>生鲜</span></a>
+        <a href="#"><span>美食</span></a>
+        <a href="#"><span>餐厨</span></a>
+        <a href="#"><span>电器</span></a>
+        <a href="#"><span>家居</span></a>
+        <a href="#"><span>洗护</span></a>
+        <a href="#"><span>孕婴</span></a>
+        <a href="#"><span>服装</span></a>
+      </div><!-- nav-超链接盒子-end -->
+      <div class="center-div"><!-- nav-表单盒子-Home -->
+        <form class="d-flex" role="search">
+          <i class="bi bi-search" style="font-size: 14px;"></i>&nbsp;&nbsp;
+          <input class="custom-search" type="search" placeholder="搜一搜" aria-label="Search">
+        </form>
+      </div><!-- nav-表单盒子-end -->
+      <a href="#" class="trolley"><!-- nav-购物车-Home -->
+        <i class="bi bi-cart3"></i>
+      </a><!-- nav-购物车-end -->
+    </nav>
+  </div>
+  </div>
+
+  <style>
+    .outer-nav {
+      display: flex;
+      justify-content: center;
+      /* 水平居中 */
+      align-items: center;
+      /* 垂直居中 */
+    }
+
+    .log-nav-div {
+      margin: 22px;
+    }
+
+    .outer-nav a {
+      /* 转为行内块元素 */
+      display: inline-block;
+      height: 40px;
+
+      /* 与height相同 */
+      line-height: 40px;
+
+      /* a标签去除默认样式 */
+      text-decoration: none;
+      color: black;
+
+      margin: 20px;
+
+      font-size: 16px;
+      font-weight: 350;
+    }
+
+    /* 选中下划线 */
+    .log-nav-div a:hover {
+      color: #70AC97;
+      border-bottom: 2px solid #70AC97;
+    }
+
+    .center-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 18%;
+      /* 根据需求调整宽度 */
+    }
+
+    a.trolley {
+      /* display: inline-block; */
+      margin: 0;
+    }
+
+    .d-flex {
+      border-bottom: 2px solid #F4F4F4;
+      /* 添加下边框 */
+      color: #CCCCCC;
+      display: flex;
+      /* 确保输入框和图标在同一行 */
+      align-items: center;
+      /* 垂直居中对齐 */
+      width: 70%;
+      padding: 8px;
+    }
+
+    .custom-search {
+      width: 100%;
+      border: none;
+      /* 去除所有边框 */
+      border-radius: 0;
+      /* 去除圆角 */
+      outline: none;
+      /* 去除点击时的蓝色边框 */
+      box-shadow: none;
+      /* 去除 Bootstrap 默认阴影 */
+    }
+
+    .custom-search::placeholder {
+      color: #CCCCCC;
+      /* 设置占位符文字的颜色 */
+      font-size: 16px;
+      /* 改变占位符文字“搜一搜”的大小 */
+    }
+
+    .trolley i {
+      font-size: 25px;
+    }
+  </style>

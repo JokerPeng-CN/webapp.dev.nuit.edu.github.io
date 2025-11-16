@@ -1,0 +1,111 @@
+<div class="HOT">
+  <div class="hot">
+    <div class="hot-box">
+      <div class="hot-box-txt">
+        <h3>热门品牌</h3>
+        <p>国际经典&nbsp;品质认证</p>
+      </div>
+    </div>
+    <div class="hot-box-more">
+      <div><a href="#"><i class="bi bi-chevron-left"></i></a></div>
+      <div><a href="#"><i class="bi bi-chevron-right"></i></a></div>
+    </div>
+    <div class="hot-picture">
+      <div class="hot-picture-message">
+        <img src="../static/img/hot1.png" alt="">
+      </div>
+      <div class="hot-picture-message">
+        <img src="../static/img/hot2.png" alt="">
+      </div>
+      <div class="hot-picture-message">
+        <img src="../static/img/hot3.png" alt="">
+      </div>
+      <div class="hot-picture-message">
+        <img src="../static/img/hot4.png" alt="">
+      </div>
+      <div class="hot-picture-message">
+        <img src="../static/img/hot5.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .HOT {
+    width: 100%;
+    background-color: #F1F1F1;
+    margin-top: 5%;
+  }
+
+  .hot {
+    background-color: #F1F1F1;
+    width: 86%;
+    margin: 0 auto;
+  }
+
+  .hot-box {
+    display: flex;
+    padding-top: 3%;
+  }
+
+  .hot-box-txt {
+    display: flex;
+    /* 横向排列 h3 和 p */
+    align-items: flex-end;
+    /* 让 h3 和 p 底部对齐 */
+    gap: 15%;
+    /* 控制 h3 和 p 之间的间距（可选） */
+  }
+
+  .hot-box h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    /* 去除默认 margin，避免影响对齐 */
+  }
+
+  .hot-box p {
+    font-size: 16px;
+    color: #A1A1A1;
+    margin: 0;
+    /* 同样去除默认 margin */
+  }
+
+  .hot-box-more {
+    display: flex;
+    justify-content: flex-end;
+    /* 使子元素靠右 */
+    margin-bottom: 1%;
+  }
+
+  .hot-box-more div {
+    background-color: #E4E4E4;
+    margin-left: 1%;
+    padding: 2px;
+  }
+
+  .hot-box-more div:hover {
+    background-color: #5EB69C;
+  }
+
+  .hot-box-more a {
+    color: white;
+  }
+
+  .hot-picture {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hot-picture-message img {
+    object-fit: cover;
+    /* 保持图片比例并裁剪 */
+    margin-bottom: 18%;
+  }
+
+  .hot-picture-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F1F1F1;
+  }
+</style>

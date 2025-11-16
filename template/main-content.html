@@ -1,0 +1,167 @@
+<div class="main">
+  <div class="main-div">
+    <div class="main-first-div">
+      <ul class="main-ul">
+        <li>
+          <a href="#" style="font-weight: 500;">
+            生鲜水果
+          </a>
+          &nbsp;&nbsp;
+          <a href="#">水果&nbsp;蔬菜</a>
+          <a href="#"><i class="bi bi-chevron-right"></i></a>
+        </li>
+        <li>
+          <a href="#" style="font-weight: 500;">
+            美食推荐
+          </a>
+          &nbsp;&nbsp;
+          <a href="#">面包&nbsp;干果</a>
+          <a href="#"><i class="bi bi-chevron-right"></i></a>
+        </li>
+        <li>
+          <a href="#" style="font-weight: 500;">
+            数码电子
+          </a>
+          &nbsp;&nbsp;
+          <a href="#">手机&nbsp;电脑</a>
+          <a href="#"><i class="bi bi-chevron-right"></i></a>
+        </li>
+        <li>
+          <a href="#" style="font-weight: 500;">
+            家庭电器
+          </a>
+          &nbsp;&nbsp;
+          <a href="#">电视&nbsp;冰箱</a>
+          <a href="#"><i class="bi bi-chevron-right"></i></a>
+        </li>
+        <li>
+          <a href="#" style="font-weight: 500;">
+            厨房用品
+          </a>
+          &nbsp;&nbsp;
+          <a href="#">厨房电器&nbsp;餐具</a>
+          <a href="#"><i class="bi bi-chevron-right"></i></a>
+        </li>
+        <li>
+          <a href="#" style="font-weight: 500;">
+            居家生活
+          </a>
+          &nbsp;&nbsp;
+          <a href="#">床品&nbsp;四件套&nbsp;被枕</a>
+          <a href="#"><i class="bi bi-chevron-right"></i></a>
+        </li>
+        <li>
+          <a href="#" style="font-weight: 500;">
+            洗护美妆
+          </a>
+          &nbsp;&nbsp;
+          <a href="#">洗发&nbsp;洁面&nbsp;美妆</a>
+          <a href="#"><i class="bi bi-chevron-right"></i></a>
+        </li>
+        <li>
+          <a href="#" style="font-weight: 500;">
+            孕婴用品
+          </a>
+          &nbsp;&nbsp;
+          <a href="#">奶粉&nbsp;玩具&nbsp;服装</a>
+          <a href="#"><i class="bi bi-chevron-right"></i></a>
+        </li>
+        <li>
+          <a href="#" style="font-weight: 500;">
+            服饰穿搭
+          </a>
+          &nbsp;&nbsp;
+          <a href="#">女装&nbsp;男装</a>
+          <a href="#"><i class="bi bi-chevron-right"></i></a>
+        </li>
+        <li>
+          <a href="#" style="font-weight: 500;">
+            日用杂货
+          </a>
+          &nbsp;&nbsp;
+          <a href="#">户外&nbsp;图书</a>
+          <a href="#"><i class="bi bi-chevron-right"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-second-div">
+      <img src="../static/img/banner1.png" alt="">
+    </div>
+  </div>
+</div>
+
+<style>
+  .main {
+    background-color: #F5F5F5;
+  }
+
+  .main-div {
+    display: flex;
+    width: 86%;
+    margin: auto;
+    min-width: 1200px;
+  }
+
+  .main-first-div {
+    background-color: #626262;
+
+    display: flex;
+    /* 启用弹性布局 */
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    width: 100%;
+  }
+
+
+  .main-ul {
+    /* 去除列表样式 */
+    list-style-type: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-ul li {
+    /* border-bottom: 1px solid #ccc; */
+    /* 可选分隔线 */
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .main-ul a {
+    /* 去除a标签横线 */
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+  }
+
+  .main-ul i {
+    float: right;
+  }
+
+  .main-first-div {
+    width: 20%;
+  }
+
+  .main-second-div {
+    height: auto;
+    display: flex;
+    align-items: stretch;
+    /* 子元素高度拉满 */
+    width: 80%;
+    /* 或者设置具体宽度 */
+    overflow: hidden;
+    /* 防止图片溢出 */
+  }
+
+  .main-second-div img {
+    width: 100%;
+    /* 图片宽度100%适应容器 */
+    height: auto;
+    /* 高度自适应 */
+    display: block;
+    /* 消除图片底部间隙 */
+  }
+</style>

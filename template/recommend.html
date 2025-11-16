@@ -1,0 +1,106 @@
+<div class="recommend">
+  <div class="recommend-box">
+    <div class="recommend-box-txt">
+      <h3>人气推荐</h3>
+      <p>人气爆款&nbsp;不容错过</p>
+    </div>
+    <div class="recommend-box-more">查看更多&nbsp;<i class="bi bi-chevron-right"></i></div>
+  </div>
+  <div class="recommend-picture">
+    <div class="recommend-picture-message"><img src="../static/img/recommend1.png" alt="">
+      <div><a href="#">特惠推荐</a>
+        <p>我猜得到&nbsp;你的需要</p>
+      </div>
+    </div>
+    <div class="recommend-picture-message"><img src="../static/img/recommend2.png" alt="">
+      <div><a href="#">爆款推荐</a>
+        <p>人气好物推荐</p>
+      </div>
+    </div>
+    <div class="recommend-picture-message"><img src="../static/img/recommend3.png" alt="">
+      <div><a href="#">节日礼品一站买全</a>
+        <p>编辑尽心整理推荐</p>
+      </div>
+    </div>
+    <div class="recommend-picture-message"><img src="../static/img/recommend4.png" alt="">
+      <div><a href="#">鲜花园艺</a>
+        <p>给生活增加仪式感</p>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .recommend {
+    width: 86%;
+    margin: 0 auto;
+  }
+
+  .recommend-box {
+    display: flex;
+
+    padding-top: 4%;
+    padding-bottom: 3%;
+  }
+
+  .recommend-box-txt {
+    display: flex;
+    /* 横向排列 h3 和 p */
+    align-items: flex-end;
+    /* 让 h3 和 p 底部对齐 */
+    gap: 15%;
+    /* 控制 h3 和 p 之间的间距（可选） */
+  }
+
+  .recommend-box h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    /* 去除默认 margin，避免影响对齐 */
+  }
+
+  .recommend-box p {
+    font-size: 16px;
+    color: #A1A1A1;
+    margin: 0;
+    /* 同样去除默认 margin */
+  }
+
+  .recommend-box-more {
+    margin-left: auto;
+    /* 将查看更多推到最右侧 */
+    font-size: 16px;
+    color: #A1A1A1;
+  }
+
+
+  .recommend-picture {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .recommend-picture-message img {
+    object-fit: cover;
+    /* 保持图片比例并裁剪 */
+    margin-bottom: 6%;
+  }
+
+  .recommend-picture-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+  }
+
+  .recommend-picture-message a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+
+  .recommend-picture-message p {
+    font-size: 16px;
+    color: #A1A1A1;
+    margin-top: 5px;
+    text-align: center;
+  }
+</style>

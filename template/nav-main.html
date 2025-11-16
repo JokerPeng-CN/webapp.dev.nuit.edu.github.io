@@ -1,0 +1,114 @@
+<div class="nav-main">
+  <div class="nav-main-div">
+    <nav class="nav-main-div-son">
+
+      <!-- LOGO -->
+      <div class="nav-main-div-logo">
+        <img src="../static/img/LOGO.PNG" alt="LOGO">
+      </div>
+
+      <!-- 菜单 -->
+      <div class="nav-main-div-a">
+        <a href="#"><span>首页</span></a>
+        <a href="#"><span>生鲜</span></a>
+        <a href="#"><span>美食</span></a>
+        <a href="#"><span>餐厨</span></a>
+        <a href="#"><span>电器</span></a>
+        <a href="#"><span>家居</span></a>
+        <a href="#"><span>洗护</span></a>
+        <a href="#"><span>孕婴</span></a>
+        <a href="#"><span>服装</span></a>
+      </div>
+
+      <!-- 搜索框 -->
+      <div class="nav-main-div-form">
+        <form action="">
+          <i class="bi bi-search" style="font-size: 14px;"></i>&nbsp;&nbsp;
+          <input class="custom-search" type="search" placeholder="搜一搜" aria-label="搜一搜">
+        </form>
+      </div>
+
+      <!-- 购物车 -->
+      <div class="nav-main-div-car">
+        <a href="#"><i class="bi bi-cart3"></i></a>
+      </div>
+    </nav>
+  </div>
+</div>
+<style>
+  .nav-main-div {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  .nav-main-div-son {
+    width: 86%;
+    margin: auto;
+    /* 水平居中 */
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+    gap: 2%;
+    /* 控制所有子元素之间的水平间距 */
+    min-width: 1200px;
+  }
+
+  .nav-main-div-a a {
+    /* 转为行内块元素 */
+    display: inline-block;
+    height: 40px;
+
+    /* 与height相同 */
+    line-height: 40px;
+
+    /* a标签去除默认样式 */
+    text-decoration: none;
+    color: black;
+
+    margin: 20px;
+
+    font-size: 16px;
+    font-weight: 350;
+  }
+
+  .nav-main-div-a a:hover {
+    color: #70AC97;
+    border-bottom: 2px solid #70AC97;
+  }
+
+  .nav-main-div-form form {
+    border-bottom: 2px solid #F4F4F4;
+    /* 添加下边框 */
+    color: #CCCCCC;
+    display: flex;
+    /* 确保输入框和图标在同一行 */
+    align-items: center;
+    /* 垂直居中对齐 */
+    padding: 8px;
+  }
+
+  .custom-search {
+    border: none;
+    /* 去除所有边框 */
+    border-radius: 0;
+    /* 去除圆角 */
+    outline: none;
+    /* 去除点击时的蓝色边框 */
+    box-shadow: none;
+    /* 去除 Bootstrap 默认阴影 */
+  }
+
+  .custom-search::placeholder {
+    color: #CCCCCC;
+    /* 设置占位符文字的颜色 */
+    font-size: 16px;
+    /* 改变占位符文字“搜一搜”的大小 */
+  }
+
+  .nav-main-div-car a {
+    /* a标签去除默认样式 */
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+  }
+</style>
