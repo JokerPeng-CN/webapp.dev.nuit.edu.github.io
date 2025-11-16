@@ -1,0 +1,214 @@
+<div class="clothes">
+  <div class="clothes-box">
+    <div class="clothes-box-txt">
+      <h3>服装</h3>
+    </div>
+    <div class="clothes-box-more">
+      <div><a href="#">热门</a></div>
+      <div><a href="#">女装</a></div>
+      <div><a href="#">奢饰品</a></div>
+      <div><a href="#">裤装</a></div>
+      <div><a href="#">衬衫</a></div>
+      <div><a href="#">T恤</a></div>
+      <div><a href="#">内衣</a></div>
+      <a href="#" style="color: #A1A1A1;">查看全部&nbsp;<i class="bi bi-chevron-right"></i></a>
+    </div>
+  </div>
+  <div class="clothes-picture">
+    <div class="clothes-picture-left">
+      <img src="static/img/clothes_left.png" alt="图片">
+    </div>
+    <div class="clothes-picture-right">
+      <div class="clothes-picture-right-top">
+        <div><img src="static/img/clothes1.png" alt="#">
+          <div>
+            <a href="#">双味千层，手抓饼烤肉组合240g/袋 4片装加热即食</a>
+            <p>￥719.00</p>
+          </div>
+        </div>
+        <div><img src="static/img/clothes2.png" alt="#">
+          <div>
+            <a href="#">云南甘蔗慢熬红糖馒头220g/袋 5个装加热即食</a>
+            <p>￥699.00</p>
+          </div>
+        </div>
+        <div><img src="static/img/clothes3.png" alt="#">
+          <div>
+            <a href="#">日式风味小圆饼圆形【海盐味】糖果零食</a>
+            <p>￥229.00</p>
+          </div>
+        </div>
+        <div><img src="static/img/clothes4.png" alt="#">
+          <div>
+            <a href="#">全麦奶油浓香小面包50g*12袋美味西点</a>
+            <p>￥14.50</p>
+          </div>
+        </div>
+      </div>
+      <div class="clothes-picture-right-bottom">
+        <div><img src="static/img/clothes5.png" alt="#">
+          <div>
+            <a href="#">秘制外皮五福摩提大福点心150g/盒美味西点</a>
+            <p>￥179.00</p>
+          </div>
+        </div>
+        <div><img src="static/img/clothes6.png" alt="#">
+          <div>
+            <a href="#">水果面膜韩国蜂蜜柚子茶560g/瓶冲调饮品</a>
+            <p>￥565.00</p>
+          </div>
+        </div>
+        <div><img src="static/img/clothes7.png" alt="#">
+          <div>
+            <a href="#">浓情比利时巧克力礼盒装205克/盒糖果零食</a>
+            <p>￥99.99</p>
+          </div>
+        </div>
+        <div><img src="static/img/clothes8.png" alt="#">
+          <div>
+            <a href="#">抹茶奶油小蛋糕礼盒装220克/盒美味西点</a>
+            <p>￥269.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .clothes {
+    width: 86%;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+
+  .clothes-box {
+    display: flex;
+    padding-top: 4%;
+    padding-bottom: 3%;
+  }
+
+  .clothes-box h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    /* 去除默认 margin，避免影响对齐 */
+  }
+
+  .clothes-box-more {
+    margin-left: auto;
+    /* 将查看更多推到最右侧 */
+    font-size: 16px;
+    color: #A1A1A1;
+
+    display: flex;
+    /* 添加这一行 */
+    align-items: center;
+    /* 垂直居中 */
+    gap: 25px;
+    /* 设置间距 */
+  }
+
+  .clothes-box-more div,
+  .clothes-box-more p {
+    margin: 0;
+    /* 去除默认边距 */
+    white-space: nowrap;
+    /* 防止文本换行 */
+    padding: 4px;
+  }
+
+  .clothes-box-more div:hover {
+    background-color: #70AC97;
+  }
+
+  .clothes-box-more div:hover a {
+    color: white;
+  }
+
+  .clothes-box-more a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+  /* ----------------------------------------------------- */
+
+  .clothes-picture {
+    display: flex;
+  }
+
+  .clothes-picture-left {
+    width: 25%;
+  }
+
+  .clothes-picture-left img {
+    /* height: 100%; */
+    /* 高度100%适应容器 */
+    /* width: auto; */
+    /* 图片宽度自适应 */
+    display: block;
+    /* 消除图片底部间隙 */
+  }
+
+  .clothes-picture-right {
+    width: 75%;
+  }
+
+  .clothes-picture-right img {
+    width: 190px;
+    /* 宽度100%适应容器 */
+    height: 100%;
+    /* 固定高度 */
+    object-fit: cover;
+    /* 保持比例并裁剪 */
+    display: block;
+  }
+
+  .clothes-picture-right-top,
+  .clothes-picture-right-bottom {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+  }
+
+  .clothes-picture-right-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+  }
+
+  .clothes-picture-right-top>div,
+  .clothes-picture-right-bottom>div {
+    width: 190px;
+    /* 统一产品卡片宽度 */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .clothes-picture-right-top div>div,
+  .clothes-picture-right-bottom div>div {
+    width: 100%;
+    /* 与图片同宽 */
+    margin-top: 10px;
+  }
+
+  .clothes-picture-right-top a,
+  .clothes-picture-right-bottom a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.4;
+    display: block;
+    word-wrap: break-word;
+    white-space: normal;
+    /* 关键：允许换行 */
+  }
+
+  .clothes-picture-right-top p,
+  .clothes-picture-right-bottom p {
+    color: #AF2F22;
+    font-size: 22px;
+    margin-top: 4px;
+  }
+</style>

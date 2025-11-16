@@ -1,0 +1,115 @@
+<div class="topic">
+  <div class="topic-box">
+    <div class="topic-box-txt">
+      <h3>最新专题</h3>
+    </div>
+    <div class="topic-box-more">
+      <a href="#">查看全部&nbsp;<i class="bi bi-chevron-right"></i></a>
+    </div>
+  </div>
+  <div class="topic-picture">
+    <div class="topic-picture-first">
+      <div><img src="static/img/topic1.png" alt=""></div>
+      <div class="topic-picture-message">
+        <div>
+          <p><i class="bi bi-suit-heart"></i>&nbsp;1220</p>
+        </div>
+        <div>
+          <p><i class="bi bi-eye"></i>&nbsp;1800</p>
+        </div>
+        <div>
+          <p><i class="bi bi-chat-left-text"></i>&nbsp;246</p>
+        </div>
+      </div>
+    </div>
+    <div class="topic-picture-second">
+      <div><img src="static/img/topic2.png" alt=""></div>
+      <div class="topic-picture-message">
+        <div>
+          <p><i class="bi bi-suit-heart"></i>&nbsp;1220</p>
+        </div>
+        <div>
+          <p><i class="bi bi-eye"></i>&nbsp;1800</p>
+        </div>
+        <div>
+          <p><i class="bi bi-chat-left-text"></i>&nbsp;246</p>
+        </div>
+      </div>
+    </div>
+    <div class="topic-picture-third">
+      <div><img src="static/img/topic3.png" alt=""></div>
+      <div class="topic-picture-message">
+        <div>
+          <p><i class="bi bi-suit-heart"></i>&nbsp;1220</p>
+        </div>
+        <div>
+          <p><i class="bi bi-eye"></i>&nbsp;1800</p>
+        </div>
+        <div>
+          <p><i class="bi bi-chat-left-text"></i>&nbsp;246</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .topic {
+    width: 86%;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+
+  .topic-box {
+    display: flex;
+    padding-top: 4%;
+    padding-bottom: 3%;
+  }
+
+  .topic-box h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    /* 去除默认 margin，避免影响对齐 */
+  }
+
+  .topic-box-more {
+    margin-left: auto;
+    /* 将查看更多推到最右侧 */
+    font-size: 16px;
+    color: #A1A1A1;
+
+    display: flex;
+    /* 添加这一行 */
+    align-items: center;
+    /* 垂直居中 */
+    gap: 25px;
+    /* 设置间距 */
+  }
+
+  .topic-box-more a {
+    text-decoration: none;
+    color: #A1A1A1;
+  }
+
+  /* ----------------------------------------------------- */
+
+  .topic-picture {
+    display: flex;
+    flex-direction: row
+      /* gap: 20px; */
+      /* 不需要间隔 */
+  }
+
+  .topic-picture-message {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+  }
+
+  .topic-picture-message p {
+    margin: 0;
+    font-size: 14px;
+    color: #A1A1A1;
+  }
+</style>
