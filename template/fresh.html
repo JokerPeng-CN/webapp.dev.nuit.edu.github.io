@@ -1,0 +1,214 @@
+<div class="fresh">
+  <div class="fresh-box">
+    <div class="fresh-box-txt">
+      <h3>生鲜</h3>
+    </div>
+    <div class="fresh-box-more">
+      <div><a href="#">热门</a></div>
+      <div><a href="#">蔬菜</a></div>
+      <div><a href="#">肉禽蛋</a></div>
+      <div><a href="#">水果</a></div>
+      <div><a href="#">海鲜</a></div>
+      <div><a href="#">零食</a></div>
+      <div><a href="#">饮料</a></div>
+      <a href="#" style="color: #A1A1A1;">查看全部&nbsp;<i class="bi bi-chevron-right"></i></a>
+    </div>
+  </div>
+  <div class="fresh-picture">
+    <div class="fresh-picture-left">
+      <img src="static/img/fresh_left.png" alt="图片">
+    </div>
+    <div class="fresh-picture-right">
+      <div class="fresh-picture-right-top">
+        <div><img src="static/img/fresh1.png" alt="#">
+          <div>
+            <a href="#">双味千层，手抓饼烤肉组合240g/袋 4片装加热即食</a>
+            <p>￥89.99</p>
+          </div>
+        </div>
+        <div><img src="static/img/fresh2.png" alt="#">
+          <div>
+            <a href="#">云南甘蔗慢熬红糖馒头220g/袋 5个装加热即食</a>
+            <p>￥9.99</p>
+          </div>
+        </div>
+        <div><img src="static/img/fresh3.png" alt="#">
+          <div>
+            <a href="#">日式风味小圆饼圆形【海盐味】糖果零食</a>
+            <p>￥588.00</p>
+          </div>
+        </div>
+        <div><img src="static/img/fresh4.png" alt="#">
+          <div>
+            <a href="#">全麦奶油浓香小面包50g*12袋美味西点</a>
+            <p>￥69.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="fresh-picture-right-bottom">
+        <div><img src="static/img/fresh5.png" alt="#">
+          <div>
+            <a href="#">秘制外皮五福摩提大福点心150g/盒美味西点</a>
+            <p>￥39.99</p>
+          </div>
+        </div>
+        <div><img src="static/img/fresh6.png" alt="#">
+          <div>
+            <a href="#">水果面膜韩国蜂蜜柚子茶560g/瓶冲调饮品</a>
+            <p>￥89.99</p>
+          </div>
+        </div>
+        <div><img src="static/img/fresh7.png" alt="#">
+          <div>
+            <a href="#">浓情比利时巧克力礼盒装205克/盒糖果零食</a>
+            <p>￥120.00</p>
+          </div>
+        </div>
+        <div><img src="static/img/fresh8.png" alt="#">
+          <div>
+            <a href="#">抹茶奶油小蛋糕礼盒装220克/盒美味西点</a>
+            <p>￥60.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .fresh {
+    width: 86%;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+
+  .fresh-box {
+    display: flex;
+    padding-top: 4%;
+    padding-bottom: 3%;
+  }
+
+  .fresh-box h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    /* 去除默认 margin，避免影响对齐 */
+  }
+
+  .fresh-box-more {
+    margin-left: auto;
+    /* 将查看更多推到最右侧 */
+    font-size: 16px;
+    color: #A1A1A1;
+
+    display: flex;
+    /* 添加这一行 */
+    align-items: center;
+    /* 垂直居中 */
+    gap: 25px;
+    /* 设置间距 */
+  }
+
+  .fresh-box-more div,
+  .fresh-box-more p {
+    margin: 0;
+    /* 去除默认边距 */
+    white-space: nowrap;
+    /* 防止文本换行 */
+    padding: 4px;
+  }
+
+  .fresh-box-more div:hover {
+    background-color: #70AC97;
+  }
+
+  .fresh-box-more div:hover a {
+    color: white;
+  }
+
+  .fresh-box-more a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+  /* ----------------------------------------------------- */
+
+  .fresh-picture {
+    display: flex;
+  }
+
+  .fresh-picture-left {
+    width: 25%;
+  }
+
+  .fresh-picture-left img {
+    /* height: 100%; */
+    /* 高度100%适应容器 */
+    /* width: auto; */
+    /* 图片宽度自适应 */
+    display: block;
+    /* 消除图片底部间隙 */
+  }
+
+  .fresh-picture-right {
+    width: 75%;
+  }
+
+  .fresh-picture-right img {
+    width: 190px;
+    /* 宽度100%适应容器 */
+    height: 100%;
+    /* 固定高度 */
+    object-fit: cover;
+    /* 保持比例并裁剪 */
+    display: block;
+  }
+
+  .fresh-picture-right-top,
+  .fresh-picture-right-bottom {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+  }
+
+  .fresh-picture-right-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+  }
+
+  .fresh-picture-right-top>div,
+  .fresh-picture-right-bottom>div {
+    width: 190px;
+    /* 统一产品卡片宽度 */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fresh-picture-right-top div>div,
+  .fresh-picture-right-bottom div>div {
+    width: 100%;
+    /* 与图片同宽 */
+    margin-top: 10px;
+  }
+
+  .fresh-picture-right-top a,
+  .fresh-picture-right-bottom a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.4;
+    display: block;
+    word-wrap: break-word;
+    white-space: normal;
+    /* 关键：允许换行 */
+  }
+
+  .fresh-picture-right-top p,
+  .fresh-picture-right-bottom p {
+    color: #AF2F22;
+    font-size: 22px;
+    margin-top: 4px;
+  }
+</style>
