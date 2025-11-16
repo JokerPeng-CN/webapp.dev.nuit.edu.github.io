@@ -73,7 +73,14 @@
         </div>
       </div>
       <div class="footer-box-message-img">
-        2
+        <div>
+          <img src="static/img/wechat.png" alt="">
+          <p>微信客服</p>
+        </div>
+        <div>
+          <img src="static/img/wechat1.png" alt="">
+          <p>欢迎赞赏</p>
+        </div>
       </div>
     </div>
     <div class="footer-box-buttom">
@@ -134,7 +141,7 @@
     margin: 0 0 0 10px;
   }
 
-  .footer-box-top h3 a {
+  .footer-box-top a {
     text-decoration: none;
     color: #333333;
   }
@@ -147,29 +154,31 @@
   .footer-box-message {
     display: flex;
     margin-top: 6%;
-    height: 500px;
   }
 
   .footer-box-message-table {
-    width: 70%;
-    background-color: red;
+    width: 75%;
   }
 
-  .footer-box-message-img {
-    width: 30%;
-    background-color: black;
+  .column-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 20px;
   }
 
   .table-content {
     display: flex;
-    min-width: 900px;
-    /* 添加这一行 */
   }
 
   .table-content ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+  }
+
+  .service-list li {
+    margin-bottom: 15px;
   }
 
   .table-content a {
@@ -189,10 +198,25 @@
     /* 添加这一行，禁止列缩小 */
   }
 
-  .column-title {
-    font-size: 18px;
-    font-weight: 400;
-    color: black;
-    margin-bottom: 20px;
+  .footer-box-message-img {
+    width: 25%;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-box-message-img p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #969696;
+  }
+
+  .footer-box-message-img img {
+    border: 1px solid #DADADA;
+    padding: 3px;
+    /* 向外扩展2px */
+    background: white;
+    /* 扩展部分的颜色 */
   }
 </style>
