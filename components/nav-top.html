@@ -23,37 +23,33 @@
 <style>
   .nav-first-box {
     height: 52px;
+    width: 100%;
     background-color: #333;
   }
 
   .nav-sec-box {
     height: 52px;
+    width: 86%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* 子元素整体靠右 */
-    width: 86%;
-    margin: 0 auto;
-    min-width: 1200px;
   }
 
   .horizontal-list {
-    /* 去除li原点和默认的边距 */
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
 
   .horizontal-list li {
-    /* li处于同一水平 */
-    display: inline-block;
+    display: inline;
     margin-right: 9px;
     color: white;
     font-weight: 100;
   }
 
   .horizontal-list a {
-    /* a标签去除默认样式 */
     text-decoration: none;
     color: white;
     font-size: 14px;

@@ -1,72 +1,57 @@
 <div class="nav-main">
   <div class="nav-main-div">
-    <nav class="nav-main-div-son">
 
-      <!-- LOGO -->
-      <div class="nav-main-div-logo">
-        <img src="static/img/logo.png" alt="logo">
-      </div>
+    <!-- LOGO -->
+    <div class="nav-main-div-logo">
+      <img src="static/img/logo.png" alt="logo">
+    </div>
 
-      <!-- 菜单 -->
-      <div class="nav-main-div-a">
-        <a href="#"><span>首页</span></a>
-        <a href="#"><span>生鲜</span></a>
-        <a href="#"><span>美食</span></a>
-        <a href="#"><span>餐厨</span></a>
-        <a href="#"><span>电器</span></a>
-        <a href="#"><span>家居</span></a>
-        <a href="#"><span>洗护</span></a>
-        <a href="#"><span>孕婴</span></a>
-        <a href="#"><span>服装</span></a>
-      </div>
+    <!-- 菜单 -->
+    <div class="nav-main-div-a">
+      <a href="#"><span>首页</span></a>
+      <a href="#"><span>生鲜</span></a>
+      <a href="#"><span>美食</span></a>
+      <a href="#"><span>餐厨</span></a>
+      <a href="#"><span>电器</span></a>
+      <a href="#"><span>家居</span></a>
+      <a href="#"><span>洗护</span></a>
+      <a href="#"><span>孕婴</span></a>
+      <a href="#"><span>服装</span></a>
+    </div>
 
-      <!-- 搜索框 -->
-      <div class="nav-main-div-form">
-        <form action="">
-          <i class="bi bi-search" style="font-size: 14px;"></i>&nbsp;&nbsp;
-          <input class="custom-search" type="search" placeholder="搜一搜、彭 广 银" aria-label="搜一搜">
-        </form>
-      </div>
+    <!-- 搜索框 -->
+    <div class="nav-main-div-form">
+      <form action="">
+        <i class="bi bi-search" style="font-size: 14px;"></i>&nbsp;&nbsp;
+        <input class="custom-search" type="search" placeholder="搜一搜、彭 广 银" aria-label="搜一搜">
+      </form>
+    </div>
 
-      <!-- 购物车 -->
-      <div class="nav-main-div-car">
-        <a href="#"><i class="bi bi-cart3"></i></a>
-      </div>
-    </nav>
+    <!-- 购物车 -->
+    <div class="nav-main-div-car">
+      <a href="#"><i class="bi bi-cart3"></i></a>
+    </div>
   </div>
 </div>
 <style>
-  .nav-main-div {
-    margin-top: 22px;
-    margin-bottom: 22px;
+  .nav-main {
+    width: 100%;
   }
 
-  .nav-main-div-son {
+  .nav-main-div {
+    margin: 22px auto 22px auto;
     width: 86%;
-    margin: auto;
-    /* 水平居中 */
     display: flex;
     align-items: center;
-    /* 垂直居中 */
-    gap: 2%;
-    /* 控制所有子元素之间的水平间距 */
-    min-width: 1200px;
   }
 
   .nav-main-div-a a {
-    /* 转为行内块元素 */
     display: inline-block;
     height: 40px;
-
-    /* 与height相同 */
     line-height: 40px;
-
-    /* a标签去除默认样式 */
+    margin-left: 30px;
     text-decoration: none;
     color: black;
-
-    margin: 20px;
-
     font-size: 16px;
     font-weight: 350;
   }
@@ -74,6 +59,10 @@
   .nav-main-div-a a:hover {
     color: #70AC97;
     border-bottom: 2px solid #70AC97;
+  }
+
+  .nav-main-div-form {
+    margin-left: auto;
   }
 
   .nav-main-div-form form {
@@ -100,9 +89,7 @@
 
   .custom-search::placeholder {
     color: #CCCCCC;
-    /* 设置占位符文字的颜色 */
     font-size: 16px;
-    /* 改变占位符文字“搜一搜”的大小 */
   }
 
   .nav-main-div-car a {

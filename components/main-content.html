@@ -85,13 +85,14 @@
       </ul>
     </div>
     <div class="main-second-div">
-      <img src="static/img/banner1.png" alt="">
+      <img src="static/img/banner1.png" alt="轮播图">
     </div>
   </div>
 </div>
 
 <style>
   .main {
+    width: 100%;
     background-color: #F5F5F5;
   }
 
@@ -99,69 +100,37 @@
     display: flex;
     width: 86%;
     margin: auto;
-    min-width: 1200px;
   }
 
   .main-first-div {
     background-color: #626262;
-
-    display: flex;
-    /* 启用弹性布局 */
-    justify-content: center;
-    /* 水平居中 */
-    align-items: center;
-    /* 垂直居中 */
-    width: 100%;
+    min-width: 220px;
+    flex: 1;
   }
 
-
   .main-ul {
-    /* 去除列表样式 */
     list-style-type: none;
-    color: white;
     padding: 0;
     margin: 0;
   }
 
   .main-ul li {
-    /* border-bottom: 1px solid #ccc; */
-    /* 可选分隔线 */
     height: 50px;
     line-height: 50px;
+    display: flex;
   }
 
   .main-ul a {
-    /* 去除a标签横线 */
     text-decoration: none;
     color: white;
     font-weight: 100;
   }
 
-  .main-ul i {
-    float: right;
+  .main-ul li a:nth-of-type(2) {
+    margin-left: 20px;
   }
 
-  .main-first-div {
-    width: 20%;
-  }
-
-  .main-second-div {
-    height: auto;
-    display: flex;
-    align-items: stretch;
-    /* 子元素高度拉满 */
-    width: 80%;
-    /* 或者设置具体宽度 */
-    overflow: hidden;
-    /* 防止图片溢出 */
-  }
-
-  .main-second-div img {
-    width: 100%;
-    /* 图片宽度100%适应容器 */
-    height: auto;
-    /* 高度自适应 */
-    display: block;
-    /* 消除图片底部间隙 */
+  .main-ul li a:nth-of-type(3) {
+    margin-left: auto;
   }
 </style>
